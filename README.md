@@ -4,7 +4,7 @@ This is my keymap for the [Kyria rev3](https://github.com/splitkb/kyria).
 
 It was heavily inspired by [Pascal Getreuer's keymap](https://github.com/getreuer/qmk-keymap). It uses a `Qwerty` base layer with an option to switch to `Colemak-DH`. I spent a lot of time trying to design a very efficient symbol layer for programming. To do so, I referred heavily to character and bigram frequencies in programming langues.
 
-The keymap is compiled using a GitHub action.
+The keymap is compiled using a GitHub Action.
 
 ## Layers
 
