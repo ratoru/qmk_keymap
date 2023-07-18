@@ -1,4 +1,4 @@
-SRC += source.c
+SRC += ratoru.c
 SRC += features/select_word.c
 SRC += features/layer_lock.c
 
@@ -15,4 +15,4 @@ GRAVE_ESC_ENABLE = no
 MAGIC_ENABLE = no
 
 # look here for custom source codes while compiling
-INTROSPECTION_KEYMAP_C = source.c 
+INTROSPECTION_KEYMAP_C = ratoru.c 
