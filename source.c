@@ -1,7 +1,12 @@
 #include QMK_KEYBOARD_H
-#include "source.h"
 #include "features/select_word.h"
 #include "features/layer_lock.h"
+
+enum custom_keycodes {
+  UPDIR = SAFE_RANGE,
+  SELWORD,
+  LLOCK
+};
 
 bool process_record_user(uint16_t keycode, keyrecord_t* record) {
   if (!process_select_word(keycode, record, SELWORD)) { return false; }
