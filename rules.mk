@@ -15,4 +15,4 @@ LTO_ENABLE = yes
 # MAGIC_ENABLE = no
 
 # look here for custom source codes while compiling
-INTROSPECTION_KEYMAP_C = ratoru.c 
+# INTROSPECTION_KEYMAP_C = ratoru.c 
