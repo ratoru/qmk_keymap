@@ -5,7 +5,7 @@
 #include "version.h"
 
 // Define all of
-enum custom_keycodes {
+enum userspace_custom_keycodes {
   UPDIR = SAFE_RANGE,
   SELWORD,
   LLOCK
