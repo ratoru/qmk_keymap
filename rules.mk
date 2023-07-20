@@ -14,6 +14,7 @@ MOUSEKEY_ENABLE = no
 SPACE_CADET_ENABLE = no
 GRAVE_ESC_ENABLE = no 
 MAGIC_ENABLE = no
+MUSIC_ENABLE = no
 
 # look here for layout while compiling (not needed)
 # INTROSPECTION_KEYMAP_C = source.c 
