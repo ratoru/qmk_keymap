@@ -16,5 +16,8 @@ GRAVE_ESC_ENABLE = no
 MAGIC_ENABLE = no
 MUSIC_ENABLE = no
 
+# Convert from Elite-C to Liatris
+CONVERT_TO = liatris
+
 # look here for layout while compiling (not needed)
 # INTROSPECTION_KEYMAP_C = source.c 
