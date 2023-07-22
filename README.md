@@ -22,33 +22,33 @@ These layers are still in the early stages of development.
 
 ### `Colemak-DH` base layer
 
-[colemak-base-layer](docs/colemak-dh-base-layer.png)
+![colemak-base-layer](docs/colemak-dh-base-layer.png)
 
 ### Symbol layer 
 
 Optimized for coding including `0` and `1`.
 
-[symbol layer](docs/symbol-layer.png)
+![symbol layer](docs/symbol-layer.png)
 
 ### Numpad layer
 
-[numpad layer](docs/numpad-layer.png)
+![numpad layer](docs/numpad-layer.png)
 
 ### Navigation layer 
 
 Adapted the [Extend Layer](https://dreymar.colemak.org/layers-extend.html) for MacOS.
 
-[navigation layer](docs/navigation-layer.png)
+![navigation layer](docs/navigation-layer.png)
 
 ### Gaming layer 
 
 Numbers and `qwerty` row. Command keys on the right side if needed.
 
-[gaming layer](docs/gaming-layer.png)
+![gaming layer](docs/gaming-layer.png)
 
 ### Alternate `Qwerty` layer
 
 Option to switch to `Qwerty`.
 
-[qwerty base layer](qwerty-layer.png)
+![qwerty base layer](qwerty-layer.png)
 
