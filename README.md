@@ -50,5 +50,5 @@ Numbers and `qwerty` row. Command keys on the right side if needed.
 
 Option to switch to `Qwerty`.
 
-![qwerty base layer](qwerty-layer.png)
+![qwerty base layer](docs/qwerty-layer.png)
 
