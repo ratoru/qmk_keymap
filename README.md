@@ -18,35 +18,35 @@ The keymap is compiled using a GitHub Action. I changed the target to `-e CONVER
 
 ## Layers
 
-These layers are still in the early stages of development.
+The number of each layer does not have much real relvancy, but let's you know which key switches to which layer. These layers are still in the early stages of development.
 
-### `Colemak-DH` base layer
+### `Colemak-DH` base layer (0)
 
 ![colemak-base-layer](docs/colemak-dh-base-layer.png)
 
-### Symbol layer 
-
-Optimized for coding including `0` and `1`.
-
-![symbol layer](docs/symbol-layer.png)
-
-### Numpad layer
-
-![numpad layer](docs/numpad-layer.png)
-
-### Navigation layer 
+### Navigation layer (2) 
 
 Adapted the [Extend Layer](https://dreymar.colemak.org/layers-extend.html) for MacOS.
 
 ![navigation layer](docs/navigation-layer.png)
 
-### Gaming layer 
+### Symbol layer (3)
+
+Optimized for coding including `0` and `1`.
+
+![symbol layer](docs/symbol-layer.png)
+
+### Numpad layer (4)
+
+![numpad layer](docs/numpad-layer.png)
+
+### Gaming layer (5)
 
 Numbers and `qwerty` row. Command keys on the right side if needed.
 
 ![gaming layer](docs/gaming-layer.png)
 
-### Alternate `Qwerty` layer
+### Alternate `Qwerty` layer (1)
 
 Option to switch to `Qwerty`.
 
