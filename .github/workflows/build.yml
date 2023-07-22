@@ -30,7 +30,7 @@ jobs:
         path: users/${{ github.actor }}
 
     - name: Build firmware
-      run: qmk compile "users/${{ github.actor }}/${{ matrix.file }}"
+      run: qmk compile "users/${{ github.actor }}/${{ matrix.file }}" -e CONVERT_TO=liatris
 
     - name: Archive firmware
       uses: actions/upload-artifact@v3
