@@ -6,6 +6,7 @@ SRC += features/swapper.c
 # Enable used features 
 CAPS_WORD_ENABLE = yes
 REPEAT_KEY_ENABLE = yes
+DYNAMIC_MACRO_ENABLE = yes
 
 # Reduce size
 LTO_ENABLE = yes
@@ -17,8 +18,5 @@ GRAVE_ESC_ENABLE = no
 MAGIC_ENABLE = no
 MUSIC_ENABLE = no
 
-# Convert from Elite-C to Liatris
+# Convert from Elite-C to Liatris (did not work)
 # CONVERT_TO=liatris
-
-# look here for layout while compiling (not needed)
-# INTROSPECTION_KEYMAP_C = source.c 
