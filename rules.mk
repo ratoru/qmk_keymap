@@ -1,6 +1,7 @@
 SRC += source.c
 SRC += features/select_word.c
 SRC += features/layer_lock.c
+SRC += features/swapper.c
 
 # Enable used features 
 CAPS_WORD_ENABLE = yes
