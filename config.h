@@ -6,6 +6,9 @@
 // Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
 #define QUICK_TAP_TERM 0
 
+// Prevent recursive dynamic macros that make the keyboard unresponsive.
+#define DYNAMIC_MACRO_NO_NESTING
+
 // Reduze size of firmware
 #define LAYER_STATE_8BIT // Limit the number of layers to 8 to save firmware size.
 #define NO_MUSIC_MODE

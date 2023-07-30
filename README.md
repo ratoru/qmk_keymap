@@ -10,9 +10,10 @@ The keymap is compiled using a GitHub Action. I changed the target to `-e CONVER
 
 - [Caps Word](https://docs.qmk.fm/#/feature_caps_word)
 - [Repeat Key](https://docs.qmk.fm/#/feature_repeat_key)
+- [Dynamic Macros](https://docs.qmk.fm/#/feature_dynamic_macros)
 - [Word Selection](https://getreuer.info/posts/keyboards/select-word/index.html) macro
-- [Layer Lock](https://getreuer.info/posts/keyboards/layer-lock/index.html) macro
 - [Swapper](https://github.com/callum-oakley/qmk_firmware/tree/master/users/callum#swapper). Sends `cmd-key`, but holds `cmd` between consecutive keypresses.
+- [Layer Lock](https://getreuer.info/posts/keyboards/layer-lock/index.html) macro
 - `../` key in symbol layer
 - Layer keys activated by the thumbs via mod-tap.
 - TBD: Home row mods?
