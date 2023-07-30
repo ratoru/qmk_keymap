@@ -7,7 +7,7 @@
   "layout": "LAYOUT",
   "layers": [
     [
-      "KC_GRV",
+      "KC_TAB",
       "KC_Q",
       "KC_W",
       "KC_F",
@@ -19,7 +19,7 @@
       "KC_Y",
       "KC_SCLN",
       "KC_UNDS",
-      "KC_NO",
+      "KC_ESC",
       "LCTL_T(KC_A)",
       "LALT_T(KC_R)",
       "LGUI_T(KC_S)",
@@ -48,7 +48,7 @@
       "KC_SLSH",
       "OSM(MOD_RSFT)",
       "TG(5)",
-      "KC_ESC",
+      "KC_T",
       "LT(2,KC_SPC)",
       "KC_TAB",
       "CW_TOGG",
