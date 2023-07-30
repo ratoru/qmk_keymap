@@ -9,6 +9,11 @@
 // Prevent recursive dynamic macros that make the keyboard unresponsive.
 #define DYNAMIC_MACRO_NO_NESTING
 
+// For tri layer functionality used in OSM
+#define TRI_LAYER_LOWER_LAYER 2
+#define TRI_LAYER_UPPER_LAYER 3
+#define TRI_LAYER_ADJUST_LAYER 4
+
 // Reduze size of firmware
 #define LAYER_STATE_8BIT // Limit the number of layers to 8 to save firmware size.
 #define NO_MUSIC_MODE

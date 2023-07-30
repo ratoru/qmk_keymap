@@ -7,6 +7,8 @@ SRC += features/swapper.c
 CAPS_WORD_ENABLE = yes
 REPEAT_KEY_ENABLE = yes
 DYNAMIC_MACRO_ENABLE = yes
+# Uncomment below to use OSM layout
+TRI_LAYER_ENABLE = yes
 
 # Reduce size
 LTO_ENABLE = yes
