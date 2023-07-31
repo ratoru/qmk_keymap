@@ -2,7 +2,6 @@
 #include "features/select_word.h"
 #include "features/layer_lock.h"
 #include "features/swapper.h"
-#include "source.h"
 
 bool sw_tab_active = false;
 bool sw_control_tab_active = false;
