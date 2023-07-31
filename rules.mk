@@ -24,3 +24,6 @@ MUSIC_ENABLE = no
 
 # Convert from Elite-C to Liatris (did not work)
 # CONVERT_TO=liatris
+
+# Look here for additional definitions of combos
+INTROSPECTION_KEYMAP_C = source.c
