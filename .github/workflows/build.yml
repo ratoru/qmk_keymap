@@ -12,7 +12,7 @@ jobs:
         file:
           # - kyria-hrm.json
           # - kyria-osm.json
-          - experiment.json
+          - experimental.json
 # End of json file list
 
     steps:

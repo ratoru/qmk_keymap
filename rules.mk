@@ -9,6 +9,8 @@ REPEAT_KEY_ENABLE = yes
 DYNAMIC_MACRO_ENABLE = yes
 # Uncomment below to use OSM layout
 TRI_LAYER_ENABLE = yes
+# Uncomment below to use "timless" homerow mods
+COMBO_ENABLE = yes
 
 # Reduce size
 LTO_ENABLE = yes
