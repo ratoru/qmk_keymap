@@ -38,11 +38,4 @@
 #define SW_TAB QK_USER + 3
 #define SW_CTAB QK_USER + 4
 #define SW_BTICK QK_USER + 5
-// Declare key combos.
-#include QMK_KEYBOARD_H
-//#include "quantum/process_keycode/process_combo.h"
-const uint16_t PROGMEM test_combo1[] = {KC_Q, KC_Z, COMBO_END};
-combo_t key_combos[] = {
-    COMBO(test_combo1, KC_NO),
-};
 #endif
