@@ -2,6 +2,7 @@
 #include "features/select_word.h"
 #include "features/layer_lock.h"
 #include "features/swapper.h"
+#include "source.h"
 
 bool sw_tab_active = false;
 bool sw_control_tab_active = false;
@@ -36,6 +37,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
 }
 
 // ---- Home Row Mods "Timeless" Config ----
+combo_t key_combos[] = {};
 
 #if defined (PERMISSIVE_HOLD_PER_KEY) || defined (HOLD_ON_OTHER_KEY_PRESS_PER_KEY) || defined (TAP_INTERVAL_MS)
 static uint16_t    next_keycode;
