@@ -38,4 +38,5 @@
 #define SW_TAB QK_USER + 3
 #define SW_CTAB QK_USER + 4
 #define SW_BTICK QK_USER + 5
+combo_t key_combos[] = {};
 #endif
