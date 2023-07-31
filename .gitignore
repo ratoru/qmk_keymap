@@ -1,3 +1,4 @@
 .DS_Store
 *.hex
 *.uf2
+build/*

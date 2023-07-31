@@ -10,8 +10,9 @@ jobs:
       matrix:
 # List of keymap json files to build
         file:
-        - kyria-hrm.json
-        - kyria-osm.json
+          # - kyria-hrm.json
+          # - kyria-osm.json
+          - experiment.json
 # End of json file list
 
     steps:

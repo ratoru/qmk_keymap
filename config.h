@@ -27,5 +27,6 @@
 #define UPDIR QK_USER + 1
 #define LLOCK QK_USER + 2
 #define SW_TAB QK_USER + 3
-#define SW_BTICK QK_USER + 4
+#define SW_CTAB QK_USER + 4
+#define SW_BTICK QK_USER + 5
 #endif

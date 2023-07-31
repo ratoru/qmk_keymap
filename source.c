@@ -4,6 +4,7 @@
 #include "features/swapper.h"
 
 bool sw_tab_active = false;
+bool sw_control_tab_active = false;
 bool sw_backtick_active = false;
 
 bool process_record_user(uint16_t keycode, keyrecord_t* record) {
@@ -15,6 +16,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
       &sw_tab_active, KC_LGUI, KC_TAB, SW_TAB,
       keycode, record
   );
+   update_swapper(
+      &sw_tab_active, KC_LCTL, KC_TAB, SW_CTAB,
+      keycode, record
+  ); 
   update_swapper(
       &sw_backtick_active, KC_LGUI, KC_GRAVE, SW_BTICK,
       keycode, record
