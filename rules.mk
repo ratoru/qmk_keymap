@@ -1,4 +1,4 @@
-SRC += source.c
+# SRC += source.c
 SRC += features/select_word.c
 SRC += features/layer_lock.c
 SRC += features/swapper.c
