@@ -50,10 +50,10 @@
       "TG(5)",
       "CW_TOGG",
       "OSM(MOD_LSFT)",
-      "ANY(TRI_LOWR)",
+      "ANY(TL_LOWR)",
       "KC_ENT",
       "KC_BSPC",
-      "ANY(TRI_UPPR)",
+      "ANY(TL_UPPR)",
       "KC_SPC",
       "ANY(SELWORD)",
       "TG(1)"
