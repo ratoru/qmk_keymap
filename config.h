@@ -40,5 +40,8 @@
 #define SW_BTICK QK_USER + 5
 // Declare key combos.
 #include "quantum/keymap_introspection.h"
-combo_t key_combos;
+const uint16_t PROGMEM test_combo1[] = {KC_Q, KC_Z, COMBO_END};
+combo_t key_combos[] = {
+    COMBO(test_combo1, KC_NO),
+};
 #endif
