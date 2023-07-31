@@ -32,12 +32,13 @@
 #ifndef __ASSEMBLER__
 // Define all of custom keycodes. Needs to be protected.
 #include "quantum/keycodes.h"
-#include "quantum/keymap_introspection.h"
 #define SELWORD QK_USER
 #define UPDIR QK_USER + 1
 #define LLOCK QK_USER + 2
 #define SW_TAB QK_USER + 3
 #define SW_CTAB QK_USER + 4
 #define SW_BTICK QK_USER + 5
-combo_t key_combos[] = {};
+// Declare key combos.
+#include "quantum/keymap_introspection.h"
+combo_t key_combos;
 #endif
