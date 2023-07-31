@@ -40,7 +40,8 @@
 #define SW_BTICK QK_USER + 5
 // Declare key combos.
 #include "quantum/process_keycode/process_combo.h"
+const uint16_t PROGMEM test_combo1[] = {KC_Q, KC_Z, COMBO_END};
 combo_t key_combos[] = {
-    COMBO({KC_Q, KC_Z, COMBO_END}, KC_NO),
+    COMBO(test_combo1, KC_NO),
 };
 #endif
