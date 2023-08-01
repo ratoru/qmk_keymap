@@ -14,7 +14,7 @@
 
 
 #ifdef COMBO_ENABLE
-// Dummy combo
+// Define combos here. Currently a dummy for instant tap to compile.
 #define C_ENUM(name, val, ...) name,
 #define C_DATA(name, val, ...) uint16_t const name##_combo[] PROGMEM = {__VA_ARGS__, COMBO_END};
 #define C_TYPE(name, val, ...) [name] = COMBO(name##_combo, val),
