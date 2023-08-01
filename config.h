@@ -16,10 +16,10 @@
 // "Timeless" config options
 #define TAP_INTERVAL_MS 100 // Instant tap setting
 // Bilateral hold options
-// #define PERMISSIVE_HOLD
-// #define PERMISSIVE_HOLD_PER_KEY
-// #define HOLD_ON_OTHER_KEY_PRESS
-// #define HOLD_ON_OTHER_KEY_PRESS_PER_KEY
+#define PERMISSIVE_HOLD
+#define PERMISSIVE_HOLD_PER_KEY
+#define HOLD_ON_OTHER_KEY_PRESS
+#define HOLD_ON_OTHER_KEY_PRESS_PER_KEY
 
 
 
