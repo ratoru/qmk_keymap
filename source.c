@@ -36,7 +36,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
 }
 
 // ---- Home Row Mods "Timeless" Config ----
-// #if defined (PERMISSIVE_HOLD_PER_KEY) || defined (HOLD_ON_OTHER_KEY_PRESS_PER_KEY) || defined (TAP_INTERVAL_MS)
+#if defined (PERMISSIVE_HOLD_PER_KEY) || defined (HOLD_ON_OTHER_KEY_PRESS_PER_KEY) || defined (TAP_INTERVAL_MS)
 static uint16_t    next_keycode;
 static keyrecord_t next_record;
 
@@ -66,21 +66,20 @@ bool pre_process_record_user(uint16_t keycode, keyrecord_t *record) {
     }
     return true;
 }
-// #endif
+#endif
 
-// #ifdef PERMISSIVE_HOLD_PER_KEY
+#ifdef PERMISSIVE_HOLD_PER_KEY
 bool get_permissive_hold(uint16_t keycode, keyrecord_t *record) {
     // Hold Control and Shift with a nested key tap on the opposite hand
     return IS_BILATERAL_TAP(record, next_record);
 }
-// #endif
+#endif
 
 
-// #ifdef HOLD_ON_OTHER_KEY_PRESS_PER_KEY
+#ifdef HOLD_ON_OTHER_KEY_PRESS_PER_KEY
 bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
     // Replace the mod-tap key with its base keycode when
-    // tapped with another non-Shift key on the same hand
-    // if (IS_UNILATERAL_TAP(record, next_record) && !IS_MOD_TAP_SHIFT(next_keycode)) {
+    // tapped with another key on the same hand
     if (IS_UNILATERAL_TAP(record, next_record)) {
         record->keycode = keycode & 0xff;
         process_record(record);
@@ -94,5 +93,5 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
     }
     return false;
 }
-// #endif
+#endif
 
