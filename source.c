@@ -1,16 +1,19 @@
 #include "source.h"
 #include "features/select_word.h"
 #include "features/layer_lock.h"
-#include "features/swapper.h"
 
+// #ifndef TAP_INTERVAL_MS
+#include "features/swapper.h"
 bool sw_tab_active = false;
 bool sw_control_tab_active = false;
 bool sw_backtick_active = false;
+// #endif
 
 bool process_record_user(uint16_t keycode, keyrecord_t* record) {
   if (!process_select_word(keycode, record, SELWORD)) { return false; }
   if (!process_layer_lock(keycode, record, LLOCK)) { return false; }
 
+  // #ifndef TAP_INTERVAL_MS
   // Adds functionality to switch apps and windows.
   update_swapper(
       &sw_tab_active, KC_LGUI, KC_TAB, SW_TAB,
@@ -24,6 +27,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
       &sw_backtick_active, KC_LGUI, KC_GRAVE, SW_BTICK,
       keycode, record
   );
+  // #endif
 
   switch (keycode) {
     case UPDIR:  // Types ../ to go up a directory on the shell.

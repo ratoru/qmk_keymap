@@ -3,7 +3,7 @@
 // Prevent recursive dynamic macros that make the keyboard unresponsive.
 #define DYNAMIC_MACRO_NO_NESTING
 
-// For tri layer functionality used in OSM
+// Define layers for tri layer functionality. Used in OSM and Instant Tap.
 #define TRI_LAYER_LOWER_LAYER 2
 #define TRI_LAYER_UPPER_LAYER 3
 #define TRI_LAYER_ADJUST_LAYER 4
