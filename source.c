@@ -68,15 +68,15 @@ bool pre_process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 // #endif
 
-#ifdef PERMISSIVE_HOLD_PER_KEY
+// #ifdef PERMISSIVE_HOLD_PER_KEY
 bool get_permissive_hold(uint16_t keycode, keyrecord_t *record) {
     // Hold Control and Shift with a nested key tap on the opposite hand
     return IS_BILATERAL_TAP(record, next_record);
 }
-#endif
+// #endif
 
 
-#ifdef HOLD_ON_OTHER_KEY_PRESS_PER_KEY
+// #ifdef HOLD_ON_OTHER_KEY_PRESS_PER_KEY
 bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
     // Replace the mod-tap key with its base keycode when
     // tapped with another non-Shift key on the same hand
@@ -93,5 +93,5 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
     }
     return false;
 }
-#endif
+// #endif
 
