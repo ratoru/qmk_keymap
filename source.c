@@ -80,7 +80,8 @@ bool get_permissive_hold(uint16_t keycode, keyrecord_t *record) {
 bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
     // Replace the mod-tap key with its base keycode when
     // tapped with another non-Shift key on the same hand
-    if (IS_UNILATERAL_TAP(record, next_record) && !IS_MOD_TAP_SHIFT(next_keycode)) {
+    // if (IS_UNILATERAL_TAP(record, next_record) && !IS_MOD_TAP_SHIFT(next_keycode)) {
+    if (IS_UNILATERAL_TAP(record, next_record)) {
         record->keycode = keycode & 0xff;
         process_record(record);
         record->event.pressed = false;
