@@ -102,7 +102,7 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
 #ifdef RGBLIGHT_ENABLE
 // Light LEDs in pink when keyboard layer 1 is active
 const rgblight_segment_t PROGMEM my_layer1_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0, 12, 316, 126, 234}
+    {0, 12, 234, 118, 203}
 );
 // Light LEDs in sky when keyboard layer 2 is active
 const rgblight_segment_t PROGMEM my_layer2_layer[] = RGBLIGHT_LAYER_SEGMENTS(
