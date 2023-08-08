@@ -38,8 +38,8 @@
       "KC_DOT",
       "KC_SLSH",
       "OSM(MOD_LSFT)",
-      "ANY(TR_LOWR)",
-      "ANY(TR_UPPR)",
+      "ANY(TL_LOWR)",
+      "ANY(TL_UPPR)",
       "KC_SPC"
     ],
     [
@@ -219,8 +219,8 @@
       "KC_RSFT",
       "KC_SPC",
       "KC_LALT",
-      "ANY(TR_UPPR)",
-      "ANY(TR_LOWR)"
+      "ANY(TL_UPPR)",
+      "ANY(TL_LOWR)"
     ]
   ],
   "author": "ratoru"
