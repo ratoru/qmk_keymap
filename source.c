@@ -126,7 +126,7 @@ const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
     my_layer2_layer,    // Overrides other layers
     my_layer3_layer,
     my_layer4_layer,
-    my_layer5_layer,
+    my_layer5_layer
 );
 
 void keyboard_post_init_user(void) {
