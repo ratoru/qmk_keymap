@@ -27,7 +27,7 @@
 
 // RGB Settings
 #ifdef RGBLIGHT_ENABLE
-#define RGBLIGHT_LIMIT_VAL 150 // Decrease maximum brightness
+// #define RGBLIGHT_LIMIT_VAL 150 // Decrease maximum brightness
 #define RGBLIGHT_SLEEP // Turn off when host sleeps.
 #define RGBLIGHT_DEFAULT_HUE 266 // catppuccin's mauve
 #define RGBLIGHT_DEFAULT_SAT 194
