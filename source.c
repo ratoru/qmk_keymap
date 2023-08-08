@@ -106,27 +106,27 @@ void keyboard_post_init_user(void) {
     rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
 }
 
-layer_state_t layer_state_set_user(layer_state_t state) {
-   switch (get_highest_layer(state)) { 
-     case 1: 
-         rgblight_sethsv_noeeprom (HSV_MAGENTA); 
-         break; 
-     case 2: 
-         rgblight_sethsv_noeeprom (HSV_TURQUOISE); 
-         break; 
-     case 3: 
-         rgblight_sethsv_noeeprom (HSV_YELLOW); 
-         break; 
-     case 4: 
-         rgblight_sethsv_noeeprom (HSV_GREEN); 
-         break; 
-     case 5: 
-         rgblight_sethsv_noeeprom (HSV_WHITE); 
-         break; 
-     default: //  for any other layers, or the default layer 
-         rgblight_sethsv_noeeprom (HSV_PURPLE); 
-         break; 
-     }
-  return state; 
-}
+// layer_state_t layer_state_set_user(layer_state_t state) {
+//    switch (get_highest_layer(state)) { 
+//      case 1: 
+//          rgblight_sethsv_noeeprom (HSV_MAGENTA); 
+//          break; 
+//      case 2: 
+//          rgblight_sethsv_noeeprom (HSV_TURQUOISE); 
+//          break; 
+//      case 3: 
+//          rgblight_sethsv_noeeprom (HSV_YELLOW); 
+//          break; 
+//      case 4: 
+//          rgblight_sethsv_noeeprom (HSV_GREEN); 
+//          break; 
+//      case 5: 
+//          rgblight_sethsv_noeeprom (HSV_WHITE); 
+//          break; 
+//      default: //  for any other layers, or the default layer 
+//          rgblight_sethsv_noeeprom (HSV_PURPLE); 
+//          break; 
+//      }
+//   return state; 
+// }
 #endif
