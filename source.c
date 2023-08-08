@@ -106,15 +106,15 @@ const rgblight_segment_t PROGMEM my_layer1_layer[] = RGBLIGHT_LAYER_SEGMENTS(
 );
 // Light LEDs in sky when keyboard layer 2 is active
 const rgblight_segment_t PROGMEM my_layer2_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0, 12, HSV_C_SKY}
+    {0, 12, 4, 165, 229}
 );
 // Light LEDs in yellow when keyboard layer 3 is active
 const rgblight_segment_t PROGMEM my_layer3_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0, 12, HSV_C_YELLOW}
+    {0, 12, 223, 142, 29}
 );
 // Light LEDs in green when keyboard layer 4 is active
 const rgblight_segment_t PROGMEM my_layer4_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0, 12, HSV_C_GREEN}
+    {0, 12, 64, 160, 43}
 );
 // Light LEDs in white when keyboard layer 5 is active
 const rgblight_segment_t PROGMEM my_layer5_layer[] = RGBLIGHT_LAYER_SEGMENTS(
