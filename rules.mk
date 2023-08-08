@@ -11,6 +11,9 @@ CAPS_WORD_ENABLE = yes
 DYNAMIC_MACRO_ENABLE = yes
 # Uncomment below to use tri-layers. Used in my OSM and Instant Tap layouts.
 TRI_LAYER_ENABLE = yes
+# RGB (underglow) lighting for Liatris
+RGBLIGHT_ENABLE = yes
+WS2812_DRIVER = vendor
 
 # Uncomment below to use "timeless" homerow mods.
 COMBO_ENABLE = yes

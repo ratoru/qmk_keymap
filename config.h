@@ -1,12 +1,16 @@
 #pragma once
 
 // Prevent recursive dynamic macros that make the keyboard unresponsive.
+#ifdef DYNAMIC_MARCO_ENABLE
 #define DYNAMIC_MACRO_NO_NESTING
+#endif
 
 // Define layers for tri layer functionality. Used in OSM and Instant Tap.
+#ifdef TRI_LAYER_ENABLE
 #define TRI_LAYER_LOWER_LAYER 2
 #define TRI_LAYER_UPPER_LAYER 3
 #define TRI_LAYER_ADJUST_LAYER 4
+#endif
 
 // ---- Home row mods settings ----
 // Configure the global tapping term (default: 200ms)
@@ -14,13 +18,24 @@
 // Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
 #define QUICK_TAP_TERM 0
 // "Timeless" config options
-#define TAP_INTERVAL_MS 100 // Instant tap setting
-// Bilateral hold options
-#define PERMISSIVE_HOLD
-#define PERMISSIVE_HOLD_PER_KEY
-#define HOLD_ON_OTHER_KEY_PRESS
-#define HOLD_ON_OTHER_KEY_PRESS_PER_KEY
+// #define TAP_INTERVAL_MS 100 // Instant tap setting
+// // Bilateral hold options
+// #define PERMISSIVE_HOLD
+// #define PERMISSIVE_HOLD_PER_KEY
+// #define HOLD_ON_OTHER_KEY_PRESS
+// #define HOLD_ON_OTHER_KEY_PRESS_PER_KEY
 
+// RGB Settings
+#ifdef RGBLIGHT_ENABLE
+#define RGBLIGHT_LIMIT_VAL 150 // Decrease maximum brightness
+#define RGBLIGHT_SLEEP // Turn off when host sleeps.
+#define RGBLIGHT_DEFAULT_HUE 266 // catppuccin's mauve
+#define RGBLIGHT_DEFAULT_SAT 194
+#define RGBLIGHT_LAYERS // Use underglow to indicate layer
+#include "custom_colors.h"
+#define RGBLIGHT_EFFECT_BREATHING
+#define RGBLIGHT_EFFECT_BREATHE_MAX RGBLIGHT_LIMIT_VAL
+#endif // RBGLIGHT_ENABLE
 
 
 // Reduze size of firmware

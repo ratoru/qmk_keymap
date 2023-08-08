@@ -2,3 +2,4 @@
 *.hex
 *.uf2
 build/*
+old/*

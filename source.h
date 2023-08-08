@@ -21,17 +21,17 @@
 
 #define COMB C_ENUM
 enum combos {
-    COMB(asdf,  KC_NO, KC_Q, KC_Z)
+    COMB(oshift,  OSM(KC_LSFT), KC_SPC, KC_BSPC)
 };
 
 #undef COMB
 #define COMB C_DATA
-COMB(asdf,  KC_NO, KC_Q, KC_Z)
+COMB(oshift,  OSM(KC_LSFT), KC_SPC, KC_BSPC)
 
 #undef COMB
 #define COMB C_TYPE
 combo_t key_combos[] = {
-    COMB(asdf,  KC_NO, KC_Q, KC_Z)
+    COMB(oshift,  OSM(KC_LSFT), KC_SPC, KC_BSPC)
 };
 
 #endif
