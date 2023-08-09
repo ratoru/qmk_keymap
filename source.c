@@ -1,19 +1,16 @@
 #include "source.h"
 #include "features/select_word.h"
 #include "features/layer_lock.h"
-
-// #ifndef TAP_INTERVAL_MS
 #include "features/swapper.h"
+
 bool sw_tab_active = false;
 bool sw_control_tab_active = false;
 bool sw_backtick_active = false;
-// #endif
 
 bool process_record_user(uint16_t keycode, keyrecord_t* record) {
   if (!process_select_word(keycode, record, SELWORD)) { return false; }
   if (!process_layer_lock(keycode, record, LLOCK)) { return false; }
 
-  // #ifndef TAP_INTERVAL_MS
   // Adds functionality to switch apps and windows.
   update_swapper(
       &sw_tab_active, KC_LGUI, KC_TAB, SW_TAB,
@@ -27,7 +24,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
       &sw_backtick_active, KC_LGUI, KC_GRAVE, SW_BTICK,
       keycode, record
   );
-  // #endif
 
   switch (keycode) {
     case UPDIR:  // Types ../ to go up a directory on the shell.
@@ -108,9 +104,9 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
 
 #ifdef RGBLIGHT_ENABLE
 void keyboard_post_init_user(void) {
-    rgblight_enable_noeeprom(); // Enables RGB, without saving settings
+    // rgblight_enable_noeeprom(); // Enables RGB, without saving settings
     rgblight_sethsv_noeeprom(HSV_PURPLE);
-    rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
+    // rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
 }
 // layer_state_t layer_state_set_user(layer_state_t state) {
 //    switch (get_highest_layer(state)) { 
