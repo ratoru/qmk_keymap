@@ -16,7 +16,7 @@ RGBLIGHT_ENABLE = yes
 WS2812_DRIVER = vendor
 
 # Uncomment below to use "timeless" homerow mods.
-COMBO_ENABLE = yes
+# COMBO_ENABLE = yes
 # Look here for definitions of combos.
 INTROSPECTION_KEYMAP_C = source.c
 
