@@ -104,9 +104,9 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
 
 #ifdef RGBLIGHT_ENABLE
 void keyboard_post_init_user(void) {
-    // rgblight_enable_noeeprom(); // Enables RGB, without saving settings
+    rgblight_enable_noeeprom(); // Enables RGB, without saving settings
+    rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
     rgblight_sethsv_noeeprom(HSV_PURPLE);
-    // rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
 }
 // layer_state_t layer_state_set_user(layer_state_t state) {
 //    switch (get_highest_layer(state)) { 
