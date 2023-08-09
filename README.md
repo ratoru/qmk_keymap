@@ -1,4 +1,4 @@
-# Custom QMK Keymap
+# Custom QMK Keymaps
 
 These are my keymaps for the [Kyria rev3](https://github.com/splitkb/kyria) and the [Aurora Sweep](https://splitkb.com/collections/keyboard-kits/products/aurora-sweep).
 
