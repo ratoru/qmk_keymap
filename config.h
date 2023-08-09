@@ -41,9 +41,4 @@
 #define SW_CTAB QK_USER + 4
 #define SW_BTICK QK_USER + 5
 #define RGBT_NE QK_USER + 6
-
-#define RGB_SPLIT
-#define RGB_SLEEP
-#define RGBLIGHT_LIMIT_VAL 128
-#define RGBLIGHT_DISABLE_KEYCODES
 #endif
