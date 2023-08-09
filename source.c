@@ -20,7 +20,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
       keycode, record
   );
    update_swapper(
-      &sw_tab_active, KC_LCTL, KC_TAB, SW_CTAB,
+      &sw_control_tab_active, KC_LCTL, KC_TAB, SW_CTAB,
       keycode, record
   ); 
   update_swapper(
