@@ -152,8 +152,8 @@
     ],
     [
       "TG(5)",
-      "RGB_M_B",
-      "RGB_TOG",
+      "KC_NO",
+      "ANY(RGBT_NE)",
       "KC_BSPC",
       "KC_NO",
       "KC_MINS",

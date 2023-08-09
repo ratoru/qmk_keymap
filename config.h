@@ -27,9 +27,9 @@
 
 // RGB Settings
 #ifdef RGBLIGHT_ENABLE
-#define RGBLIGHT_SLEEP // Turn off when host sleeps.
-#define RGBLIGHT_EFFECT_BREATHING
-#define RGBLIGHT_EFFECT_BREATHE_MAX RGBLIGHT_LIMIT_VAL
+// #define RGBLIGHT_SLEEP // Turn off when host sleeps.
+// #define RGBLIGHT_EFFECT_BREATHING
+// #define RGBLIGHT_EFFECT_BREATHE_MAX RGBLIGHT_LIMIT_VAL
 #endif // RBGLIGHT_ENABLE
 
 
@@ -48,4 +48,5 @@
 #define SW_TAB QK_USER + 3
 #define SW_CTAB QK_USER + 4
 #define SW_BTICK QK_USER + 5
+#define RGBT_NE QK_USER + 6
 #endif

@@ -35,6 +35,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
         SEND_STRING("../");
       }
       return false;
+    #ifdef RGBLIGHT_ENABLE
+    case RGBT_NE:
+      if (record->event.pressed) {
+        rgblight_toggle_noeeprom();
+      }
+      return false;
+    #endif
   }
   return true;
 }
