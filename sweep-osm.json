@@ -152,7 +152,7 @@
     ],
     [
       "TG(5)",
-      "KC_NO",
+      "ANY(EE_CLR)",
       "ANY(RGBT_NE)",
       "KC_BSPC",
       "KC_NO",
