@@ -27,7 +27,9 @@
 
 // RGB Settings
 #ifdef RGBLIGHT_ENABLE
-// #define RGBLIGHT_SLEEP // Turn off when host sleeps.
+#define RGBLIGHT_SLEEP // Turn off when host sleeps.
+#define RGBLIGHT_SPLIT
+#define RGBLIGHT_LIMIT_VAL 150
 // #define RGBLIGHT_EFFECT_BREATHING
 // #define RGBLIGHT_EFFECT_BREATHE_MAX RGBLIGHT_LIMIT_VAL
 #endif // RBGLIGHT_ENABLE
