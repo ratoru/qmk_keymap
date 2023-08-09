@@ -1,24 +1,25 @@
-# Kyria Keymap
+# Custom QMK Keymap
 
-This is my keymap for the [Kyria rev3](https://github.com/splitkb/kyria). 
+These are my keymaps for the [Kyria rev3](https://github.com/splitkb/kyria) and the [Aurora Sweep](https://splitkb.com/collections/keyboard-kits/products/aurora-sweep).
 
 It was heavily inspired by [Pascal Getreuer's keymap](https://github.com/getreuer/qmk-keymap). It uses a `Colemak-DH` base layer with an option to switch to `Qwerty`. I spent a lot of time trying to design a very efficient symbol layer for programming. To do so, I referred heavily to character and bigram frequencies in programming langues.
 
-The keymap is compiled using a GitHub Action. I changed the target to `-e CONVERT_TO=liatris` in the GitHub Action since adding it in `rules.mk` did not work for me. If you have a [different controller](https://docs.qmk.fm/#/feature_converters?id=converters), you might want to remove this part in `build.yml`. 
+The keymap is compiled using a GitHub Action. I changed the target to `-e CONVERT_TO=liatris` in the GitHub Action since adding it in `rules.mk` did not work for me. If you have a [different controller](https://docs.qmk.fm/#/feature_converters?id=converters), you might want to remove this part in `build.yml`.
 
 ## Features
 
 - [Caps Word](https://docs.qmk.fm/#/feature_caps_word)
-- [Repeat Key](https://docs.qmk.fm/#/feature_repeat_key)
 - [Dynamic Macros](https://docs.qmk.fm/#/feature_dynamic_macros)
 - [Word Selection](https://getreuer.info/posts/keyboards/select-word/index.html) macro
 - [Swapper](https://github.com/callum-oakley/qmk_firmware/tree/master/users/callum#swapper). Sends `cmd-key`, but holds `cmd` between consecutive keypresses.
 - [Layer Lock](https://getreuer.info/posts/keyboards/layer-lock/index.html) macro
 - `../` key in symbol layer
 - Layer keys activated by the thumbs via mod-tap.
+- Unused: [Repeat Key](https://docs.qmk.fm/#/feature_repeat_key)
 - TBD: Home row mods?
+- TBD: RGB lighting (= underglow) using `_noeeprom` functions.
 
-## Layers
+## Kyria keymap
 
 The number of each layer does not have much real relvancy, but let's you know which key switches to which layer. These layers are still in the early stages of development.
 
