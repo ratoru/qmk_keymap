@@ -12,8 +12,7 @@ jobs:
         file:
           # - kyria-hrm.json
           # - kyria-osm.json
-          - sweep-bspc.json
-          # - experimental.json
+          - sweep-osm.json
 # End of json file list
 
     steps:

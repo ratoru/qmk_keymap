@@ -37,6 +37,16 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
         rgblight_toggle_noeeprom();
       }
       return false;
+    case RGB_IB_NE:
+      if (record->event.pressed) {
+        rgblight_increase_val_noeeprom();
+      }
+      return false;
+    case RGB_DB_NE:
+      if (record->event.pressed) {
+        rgblight_decrease_val_noeeprom();
+      }
+      return false;
     #endif
   }
   return true;
@@ -102,10 +112,10 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
 }
 #endif
 
-// #ifdef RGBLIGHT_ENABLE
+#ifdef RGBLIGHT_ENABLE
 void keyboard_post_init_user(void) {
     rgblight_enable_noeeprom(); // Enables RGB, without saving settings
-    rgblight_sethsv_noeeprom(HSV_GREEN);
+    rgblight_sethsv_noeeprom(HSV_MAGENTA);
     rgblight_mode_noeeprom(1);
 }
-// #endif
+#endif
