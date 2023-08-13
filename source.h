@@ -14,25 +14,5 @@
 #endif
 
 #ifdef COMBO_ENABLE
-// Define combos here. Currently a dummy for instant tap to compile.
-#define C_ENUM(name, val, ...) name,
-#define C_DATA(name, val, ...) uint16_t const name##_combo[] PROGMEM = {__VA_ARGS__, COMBO_END};
-#define C_TYPE(name, val, ...) [name] = COMBO(name##_combo, val),
-#define UNUSED(...)
-
-#define COMB C_ENUM
-enum combos {
-    COMB(oshift, KC_A, KC_SPC, KC_BSPC)
-};
-
-#undef COMB
-#define COMB C_DATA
-COMB(oshift, KC_A, KC_SPC, KC_BSPC)
-
-#undef COMB
-#define COMB C_TYPE
-combo_t key_combos[] = {
-    COMB(oshift, KC_A, KC_SPC, KC_BSPC)
-};
-
+#include "combos.h"
 #endif
