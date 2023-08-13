@@ -15,9 +15,9 @@ The keymap is compiled using a GitHub Action. I changed the target to `-e CONVER
 - [Layer Lock](https://getreuer.info/posts/keyboards/layer-lock/index.html) macro
 - `../` key in symbol layer
 - Layer keys activated by the thumbs via mod-tap.
+- RGB lighting (= underglow) using `_noeeprom` functions. Uses different color for each layer.
 - Unused: [Repeat Key](https://docs.qmk.fm/#/feature_repeat_key)
 - TBD: Home row mods?
-- TBD: RGB lighting (= underglow) using `_noeeprom` functions.
 
 ## Kyria keymap
 

@@ -29,7 +29,7 @@
 #define WS2812_PIO_USE_PIO1 // Force the usage of PIO1 peripheral, by default the WS2812 implementation uses the PIO0 peripheral
 #define RGB_SLEEP
 #define RGBLIGHT_DISABLE_KEYCODES
-#define RBGLIGHT_LIMIT_VAL 80
+#define RGBLIGHT_LIMIT_VAL 128
 #endif
 
 // Reduze size of firmware
