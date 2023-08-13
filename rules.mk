@@ -1,8 +1,7 @@
 # Uncomment this and remove introspection if you are not using combos or "timeless" hrm.
-SRC += source.c
+# SRC += source.c
 SRC += features/select_word.c
 SRC += features/layer_lock.c
-# Swapper does not play well with instant tap.
 SRC += features/swapper.c
 
 # Enable used features 
@@ -18,7 +17,7 @@ WS2812_DRIVER = vendor
 # Uncomment below to use "timeless" homerow mods.
 # COMBO_ENABLE = yes
 # Look here for definitions of combos.
-# INTROSPECTION_KEYMAP_C = source.c
+INTROSPECTION_KEYMAP_C = source.c
 
 # Reduce size
 LTO_ENABLE = yes
