@@ -25,10 +25,13 @@
 // #define HOLD_ON_OTHER_KEY_PRESS
 // #define HOLD_ON_OTHER_KEY_PRESS_PER_KEY
 
+#ifdef RGBLIGHT_ENABLE
 #define WS2812_PIO_USE_PIO1 // Force the usage of PIO1 peripheral, by default the WS2812 implementation uses the PIO0 peripheral
 #define RGB_SLEEP
 #define RGBLIGHT_DISABLE_KEYCODES
-#define RGBLIGHT_VAL_STEP 8
+#define RGBLIGHT_VAL_STEP 120
+#define RBGLIGHT_LIMIT_VAL 120
+#endif
 
 // Reduze size of firmware
 #define LAYER_STATE_8BIT // Limit the number of layers to 8 to save firmware size.

@@ -37,10 +37,10 @@
       "KC_COMM",
       "KC_DOT",
       "KC_SLSH",
-      "OSM(MOD_LSFT)",
+      "KC_SPC",
       "ANY(TL_LOWR)",
       "ANY(TL_UPPR)",
-      "KC_SPC"
+      "KC_BSPC"
     ],
     [
       "KC_Q",
