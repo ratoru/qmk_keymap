@@ -25,6 +25,10 @@
 // #define HOLD_ON_OTHER_KEY_PRESS
 // #define HOLD_ON_OTHER_KEY_PRESS_PER_KEY
 
+#define RGB_SLEEP
+#define RGBLIGHT_DISABLE_KEYCODES
+#define RGBLIGHT_VAL_STEP 8
+
 // Reduze size of firmware
 #define LAYER_STATE_8BIT // Limit the number of layers to 8 to save firmware size.
 #define NO_MUSIC_MODE
