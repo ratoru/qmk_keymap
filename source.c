@@ -115,7 +115,28 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
 #ifdef RGBLIGHT_ENABLE
 void keyboard_post_init_user(void) {
     rgblight_enable_noeeprom(); // Enables RGB, without saving settings
-    rgblight_sethsv_noeeprom(HSV_MAGENTA);
+    rgblight_sethsv_noeeprom(HSV_PINK);
     rgblight_mode_noeeprom(1);
 }
+
+layer_state_t layer_state_set_user(layer_state_t state) {
+    switch (get_highest_layer(state)) { 
+     case 1: 
+         rgblight_sethsv_noeeprom (HSV_MAGENTA); 
+         break; 
+     case 2: 
+         rgblight_sethsv_noeeprom (HSV_BLUE); 
+         break; 
+     case 3: 
+         rgblight_sethsv_noeeprom (HSV_GOLD); 
+         break; 
+     case 4:
+         rgblight_sethsv_noeeprom (HSV_GREEN);
+         break;
+     default: //  for any other layers, or the default layer 
+         rgblight_sethsv_noeeprom (HSV_PINK); 
+         break; 
+     }
+  return state; 
+ };
 #endif
