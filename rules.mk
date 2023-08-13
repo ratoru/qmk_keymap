@@ -12,10 +12,11 @@ DYNAMIC_MACRO_ENABLE = yes
 TRI_LAYER_ENABLE = yes
 # RGB (underglow) lighting for Liatris
 RGBLIGHT_ENABLE = yes
+RGB_MATRIX_ENABLE = no
 WS2812_DRIVER = vendor
 
 # Uncomment below to use "timeless" homerow mods.
-# COMBO_ENABLE = yes
+COMBO_ENABLE = yes
 # Look here for definitions of combos.
 INTROSPECTION_KEYMAP_C = source.c
 
