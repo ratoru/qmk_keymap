@@ -16,8 +16,15 @@ The keymap is compiled using a GitHub Action. I changed the target to `-e CONVER
 - `../` key in symbol layer
 - Layer keys activated by the thumbs via mod-tap.
 - RGB lighting (= underglow) using `_noeeprom` functions. Uses different color for each layer.
+- Combos like `spc + bspc = one-shot sift`.
 - Unused: [Repeat Key](https://docs.qmk.fm/#/feature_repeat_key)
 - TBD: Home row mods?
+
+## Sweep keymap
+
+Aurora Sweep keymap using one shot modifiers, combos, and `noeeprom` RGB underglow.
+
+![sweep-keymap](docs/sweep/sweep-osm.png)
 
 ## Kyria keymap
 
@@ -25,33 +32,33 @@ The number of each layer does not have much real relvancy, but let's you know wh
 
 ### `Colemak-DH` base layer (0)
 
-![colemak-base-layer](docs/colemak-dh-base-layer.png)
+![colemak-base-layer](docs/kyria/colemak-dh-base-layer.png)
 
 ### Navigation layer (2) 
 
 Adapted the [Extend Layer](https://dreymar.colemak.org/layers-extend.html) for MacOS.
 
-![navigation layer](docs/navigation-layer.png)
+![navigation layer](docs/kyria/navigation-layer.png)
 
 ### Symbol layer (3)
 
 Optimized for coding including `0` and `1`.
 
-![symbol layer](docs/symbol-layer.png)
+![symbol layer](docs/kyria/symbol-layer.png)
 
 ### Numpad layer (4)
 
-![numpad layer](docs/numpad-layer.png)
+![numpad layer](docs/kyria/numpad-layer.png)
 
 ### Gaming layer (5)
 
 Numbers and `qwerty` row. Command keys on the right side if needed.
 
-![gaming layer](docs/gaming-layer.png)
+![gaming layer](docs/kyria/gaming-layer.png)
 
 ### Alternate `Qwerty` layer (1)
 
 Option to switch to `Qwerty`.
 
-![qwerty base layer](docs/qwerty-layer.png)
+![qwerty base layer](docs/kyria/qwerty-layer.png)
 
