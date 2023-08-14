@@ -19,5 +19,7 @@ Example: ACTN(rgb_tog, rgb_matrix_toggle(), KC_Z, KC_X)
 SSTR(vi_quit,  ":q!",    KC_Q,    KC_W)
 
 // Simple keycodes
-//   name     result           chord keys
-COMB(O_SHIFT, OSM(MOD_LSFT),   KC_SPC, KC_BSPC)
+//   name      result           chord keys
+COMB(O_SHIFT,  OSM(MOD_LSFT),   KC_SPC, KC_BSPC)
+COMB(PNKY_ESC, KC_ESC,          KC_A, KC_O)
+COMB(CMD_SPC,  LGUI(KC_SPC),    KC_G, KC_M)

@@ -139,4 +139,16 @@ layer_state_t layer_state_set_user(layer_state_t state) {
      }
   return state; 
  };
+
+void suspend_power_down_user(void) {
+    // code will run multiple times while keyboard is suspended
+    rgblight_disable_noeeprom();
+}
+
+void suspend_wakeup_init_user(void) {
+    // code will run on keyboard wakeup
+    rgblight_enable_noeeprom();
+    rgblight_sethsv_noeeprom(HSV_PINK);
+    rgblight_mode_noeeprom(1);
+}
 #endif
