@@ -15,16 +15,16 @@ The keymap is compiled using a GitHub Action. I changed the target to `-e CONVER
 - [Layer Lock](https://getreuer.info/posts/keyboards/layer-lock/index.html) macro
 - `../` key in symbol layer
 - Layer keys activated by the thumbs via mod-tap.
-- RGB lighting (= underglow) using `_noeeprom` functions. Uses different color for each layer.
+- RGB lighting (= underglow) using `_noeeprom` functions. Uses different colors to indicate current layer.
 - Combos like `spc + bspc = one-shot sift`.
-- Unused: [Repeat Key](https://docs.qmk.fm/#/feature_repeat_key)
-- TBD: Home row mods?
+- Layouts for both home row mods (named `*-hrm.json`) and one-shot modifiers (named `*-osm.json`).
+- For home row mods users: [timeless home row mods](https://github.com/urob/zmk-config#timeless-homerow-mods) implementation for QMK.
 
 ## Sweep keymap
 
-Aurora Sweep keymap using one shot modifiers, combos, and `noeeprom` RGB underglow.
+Aurora Sweep keymap using combos and `noeeprom` RGB underglow. Can be compiled using one-shot modifiers or home row mods.
 
-![sweep-keymap](docs/sweep/sweep-osm.png)
+![sweep-keymap](docs/sweep/sweep-hrm.png)
 
 ## Kyria keymap
 
@@ -61,4 +61,8 @@ Numbers and `qwerty` row. Command keys on the right side if needed.
 Option to switch to `Qwerty`.
 
 ![qwerty base layer](docs/kyria/qwerty-layer.png)
+
+## Switching between hrm and osm
+
+I created keymaps for both because I want to try how each one feels. In order to switch the compilation target, uncomment the correct file in the matrix in ` `
 
