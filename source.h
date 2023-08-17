@@ -14,5 +14,5 @@
 #endif
 
 #ifdef COMBO_ENABLE
-#include "combos.h"
+#include "features/combos.h"
 #endif
