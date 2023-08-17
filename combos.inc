@@ -16,8 +16,8 @@ Example: ACTN(rgb_tog, rgb_matrix_toggle(), KC_Z, KC_X)
 */
 
 // Macros
-SSTR(vi_quit,  ":q!",    KC_Q,    KC_W)
-SSTR(vi_save,  ":w!",    KC_Q,    KC_F)
+SSTR(vi_quit,  ":wq",    KC_Q,    KC_W)
+SSTR(vi_save,  ":q!",    KC_Q,    KC_F)
 
 // Simple keycodes
 //   name      result           chord keys

@@ -15,8 +15,8 @@ The keymap is compiled using a GitHub Action. I changed the target to `-e CONVER
 - [Layer Lock](https://getreuer.info/posts/keyboards/layer-lock/index.html) macro
 - `../` key in symbol layer
 - Layer keys activated by the thumbs via mod-tap.
-- RGB lighting (= underglow) using `_noeeprom` functions. Uses different colors to indicate current layer.
-- Combos like `spc + bspc = one-shot sift`.
+- RGB lighting (= underglow) using `_noeeprom` functions. Uses different colors to indicate current layer. Turns off microcontroller light.
+- Combos like `spc + bspc = one-shot sift`. See `combos.inc` for more info.
 - Layouts for both home row mods (named `*-hrm.json`) and one-shot modifiers (named `*-osm.json`).
 - For home row mods users: [timeless home row mods](https://github.com/urob/zmk-config#timeless-homerow-mods) implementation for QMK.
 
@@ -64,5 +64,8 @@ Option to switch to `Qwerty`.
 
 ## Switching between hrm and osm
 
-I created keymaps for both because I want to try how each one feels. In order to switch the compilation target, uncomment the correct file in the matrix in ` `
+I created keymaps for both because I want to try how each one feels. In order to switch the compilation target, add the right file to `build.yml`. Next, (un-)comment the corresponding `#defines` in `rules.mk`.
+
+Note: when using timeless home row mods, combos using the home row keys won't work.
+
 
