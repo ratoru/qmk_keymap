@@ -113,6 +113,14 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
 #endif
 
 #ifdef RGBLIGHT_ENABLE
+void keyboard_pre_init_user(void) {
+  // Set our LED pin as output
+  setPinOutput(24);
+  // Turn the LED off
+  // (Due to technical reasons, high is off and low is on)
+  writePinHigh(24);
+}
+
 void keyboard_post_init_user(void) {
     rgblight_enable_noeeprom(); // Enables RGB, without saving settings
     rgblight_sethsv_noeeprom(HSV_PINK);
