@@ -20,6 +20,8 @@ The keymap is compiled using a GitHub Action. I changed the target to `-e CONVER
 - Layouts for both home row mods (named `*-hrm.json`) and one-shot modifiers (named `*-osm.json`).
 - For home row mods users: [timeless home row mods](https://github.com/urob/zmk-config#timeless-homerow-mods) implementation for QMK.
 
+Note that keymap documentation might not always be up to date.
+
 ## Sweep keymap
 
 Aurora Sweep keymap using combos and `noeeprom` RGB underglow. Can be compiled using one-shot modifiers or home row mods.
@@ -34,7 +36,7 @@ The number of each layer does not have much real relvancy, but let's you know wh
 
 ![colemak-base-layer](docs/kyria/colemak-dh-base-layer.png)
 
-### Navigation layer (2) 
+### Navigation layer (2)
 
 Adapted the [Extend Layer](https://dreymar.colemak.org/layers-extend.html) for MacOS.
 
@@ -68,4 +70,12 @@ I created keymaps for both because I want to try how each one feels. In order to
 
 Note: when using timeless home row mods, combos using the home row keys won't work.
 
+## Flashing the litaris
 
+- Disconnect TRRS/TRS cable between the splits.
+- For both of splits, do:
+  - Connect your split to the computer using USB.
+  - Press the reset switch of the split two times consequently so that your RP2040 based MCU will go to Bootloader Mode.
+  - You must see Raspberry PI Boot Device in the output of lsusb. It's also detected as Mass Storage Device.
+  - Drag and Drop (cp or copy) the .uf2 file to the RP2040 Mass Storage Device.
+  - After the firmware is copied, you will see that the MCU exits Bootloader mode and Mass Storage Device is no longer present. It means that the firmware is flashed!

@@ -32,6 +32,7 @@ bool is_oneshot_ignored_key(uint16_t keycode) {
     case OS_CTRL:
     case OS_ALT:
     case OS_CMD:
+    case OS_HYPR:
         return true;
     default:
         return false;
@@ -72,6 +73,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
     &os_cmd_state, KC_LCMD, OS_CMD,
     keycode, record
   );
+  update_oneshot(
+    &os_cmd_state, KC_HYPR, OS_HYPR,
+    keycode, record
+  )
 
   switch (keycode) {
     case UPDIR:  // Types ../ to go up a directory on the shell.
