@@ -3,10 +3,12 @@
 SRC += features/select_word.c
 SRC += features/layer_lock.c
 SRC += features/swapper.c
+SRC += features/oneshot.c
 
 # Enable used features 
 CAPS_WORD_ENABLE = yes
 DYNAMIC_MACRO_ENABLE = yes
+REPEAT_KEY_ENABLE = yes
 
 # Uncomment below to use tri-layers.
 TRI_LAYER_ENABLE = yes

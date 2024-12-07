@@ -14,16 +14,16 @@
 
 // ---- Home row mods settings ----
 // Configure the global tapping term (default: 200ms)
-#define TAPPING_TERM 500
-// Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
-#define QUICK_TAP_TERM 0
-// "Timeless" config options
-#define TAP_INTERVAL_MS 100 // Instant tap setting
-// // Bilateral hold options
-#define PERMISSIVE_HOLD
-#define PERMISSIVE_HOLD_PER_KEY
-#define HOLD_ON_OTHER_KEY_PRESS
-#define HOLD_ON_OTHER_KEY_PRESS_PER_KEY
+/*#define TAPPING_TERM 500*/
+/*// Enable rapid switch from tap to hold, disables double tap hold auto-repeat.*/
+/*#define QUICK_TAP_TERM 0*/
+/*// "Timeless" config options*/
+/*#define TAP_INTERVAL_MS 100 // Instant tap setting*/
+/*// // Bilateral hold options*/
+/*#define PERMISSIVE_HOLD*/
+/*#define PERMISSIVE_HOLD_PER_KEY*/
+/*#define HOLD_ON_OTHER_KEY_PRESS*/
+/*#define HOLD_ON_OTHER_KEY_PRESS_PER_KEY*/
 
 #ifdef RGBLIGHT_ENABLE
 #define WS2812_PIO_USE_PIO1 // Force the usage of PIO1 peripheral, by default the WS2812 implementation uses the PIO0 peripheral
@@ -50,4 +50,8 @@
 #define RGBT_NE QK_USER + 6
 #define RGB_DB_NE QK_USER + 7
 #define RGB_IB_NE QK_USER + 8
+#define OS_SHFT QK_USER + 9
+#define OS_CTRL QK_USER + 10
+#define OS_ALT QK_USER + 11
+#define OS_CMD QK_USER + 12
 #endif
