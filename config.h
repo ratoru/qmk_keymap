@@ -54,4 +54,5 @@
 #define OS_CTRL QK_USER + 10
 #define OS_ALT QK_USER + 11
 #define OS_CMD QK_USER + 12
+#define OS_HYPR QK_USER + 13
 #endif

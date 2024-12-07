@@ -76,7 +76,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
   update_oneshot(
     &os_cmd_state, KC_HYPR, OS_HYPR,
     keycode, record
-  )
+  );
 
   switch (keycode) {
     case UPDIR:  // Types ../ to go up a directory on the shell.
