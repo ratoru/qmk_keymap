@@ -1,5 +1,9 @@
 # Custom QMK Keymaps
 
+> [!NOTE]
+> My latest keymaps can be found in [ratoru/qmk_userspace](https://github.com/ratoru/qmk_userspace).
+> This repo was created before QMK released the external userspace.
+
 These are my keymaps for the [Kyria rev3](https://github.com/splitkb/kyria) and the [Aurora Sweep](https://splitkb.com/collections/keyboard-kits/products/aurora-sweep). Learn more about how and why I created them by reading [my guide](https://ratoru.com/blog/choose-the-right-base-layout).
 
 It was heavily inspired by [Pascal Getreuer's keymap](https://github.com/getreuer/qmk-keymap). It uses a `Colemak-DH` base layer with an option to switch to `Qwerty`. I spent a lot of time trying to design a very efficient symbol layer for programming. To do so, I referred heavily to character and bigram frequencies in programming langues.
